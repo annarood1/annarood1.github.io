@@ -38,6 +38,7 @@
       max-width: 40rem;
       margin: auto;
     }
+
     nav ul {
       list-style: none;
       overflow: auto;
@@ -50,36 +51,40 @@
     }
 
     table td {
-        vertical-align: top;
-        padding: 0.156rem 0.313rem;
-        text-align: left
+      vertical-align: top;
+      padding: 0.156rem 0.313rem;
+      text-align: left
     }
+
     @media (min-width:1100px) {
-        .wrapper {
-            width:40rem;
-            margin: auto;
-        }
-        .grid-10 {
-            display:grid;
-            grid-template-columns:repeat(9,1fr);
-            grid-auto-rows:-webkit-min-content;
-            grid-auto-rows:min-content;
-            -moz-column-gap:1.6rem;
-            column-gap:1.6rem;
-            row-gap:1.6rem;
-        }
-        .col-5{
-            grid-column-end: span 6;
-        }
-        .col-4 {
-          grid-column-end: span 3;
-        }
+      .wrapper {
+        width: 40rem;
+        margin: auto;
+      }
+
+      .grid-10 {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-auto-rows: -webkit-min-content;
+        grid-auto-rows: min-content;
+        -moz-column-gap: 1.6rem;
+        column-gap: 1.6rem;
+        row-gap: 1.6rem;
+      }
+
+      .col-5 {
+        grid-column-end: span 6;
+      }
+
+      .col-4 {
+        grid-column-end: span 3;
+      }
     }
+
     footer {
       max-width: 40rem;
       margin: auto;
     }
-
   </style>
 </head>
 
@@ -139,30 +144,36 @@
         </div>
         <div class="col-4">
           <section>
-            <p>337 Mt Selkirk Close</p>
-            <p> Calgary AB, T2Z 2M7</p>
+            <p><em>Address omitted</em></p>
+            <p><em>Postal Code omitted</em></p>
             <strong>
-              <p> (825)-431-0828</p>
+              <p><em>Phone Number Omitted</em></p>
               <p> annarood29@gmail.com </p>
             </strong>
             <h4>SKILLS</h4>
-            <p>Maintaining a clean and safe environment.</p>
-            <p>Cash Handling.</p>
-            <p>Guest Relations.</p>
-            <p>Problem Solving.</p>
-            <p>Maintaining Stock Level.</p>
-            <p>Team Work.</p>
+            <ol>
+              <li>Maintaining a clean and safe environment.</li>
+              <li>Cash Handling.</li>
+              <li>Guest Relations.</li>
+              <li>Problem Solving.</li>
+              <li>Maintaining Stock Level.</li>
+              <li>Team Work.</li>
+            </ol>
             <h4>AWARDS / ELECTIVES</h4>
-            <p><strong>District Employee of The Month</strong></p>
-            <p>2023 Awarded for being the most passionate, growing employees out of any employee in the district.</p>
-            <p><strong>Child Care Course</strong></p>
-            <p>High School elective during senior year. Basic first aid experience and education. Learned about care and
-              development for children ranged from 0-12.</p>
+            <ol>
+              <li><strong>District Employee of The Month</strong></li>
+              <li>2023 Awarded for being the most passionate, growing employees out of any employee in the district.
+              </li>
+              <li><strong>Child Care Course</strong></li>
+              <li>High School elective during senior year. Basic first aid experience and education. Learned about care
+                and
+                development for children ranged from 0-12.</li>
+            </ol>
 
           </section>
           <section>
             <h4>Skills and Tools</h4>
-            <table>
+            <table border="1">
               <tr>
                 <th>Programs</th>
                 <th>Languages</th>
