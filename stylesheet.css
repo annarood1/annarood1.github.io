@@ -1,94 +1,172 @@
+.edu-au-vic-wa-nt-pre {
+	font-family: "Edu AU VIC WA NT Pre", cursive;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+.edu-au-vic-wa-nt-pre-italic {
+	font-family: "Edu AU VIC WA NT Pre", cursive;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: italic;
+}
+.edu-au-vic-wa-nt-pre-emphatic {
+	font-family: "Edu AU VIC WA NT Pre", cursive;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: oblique;
+}
+.edu-au-vic-wa-nt-pre-bold {
+	font-family: "Edu AU VIC WA NT Pre", cursive;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: bold;
+}
+.edu-au-vic-wa-nt-pre-black {
+	font-family: "Edu AU VIC WA NT Pre", cursive;
+	font-optical-sizing: auto;
+	font-weight: 800;
+	font-style: bold;
+}
+
+html {
+	margin: 0;
+	width: 100%;
+	background-color: white;
+}
+
+/* Main Body */
 body {
-    margin: auto;
-    max-width: 40rem;
-  }
+	font-family: Edu AU VIC WA NT Pre ;
+	margin: auto;
+	max-width: 40rem;
+	color: #E4979B
+}
 
-  p {
-    max-width: clamp(45ch, 100%, 75ch);
-    font-size: 1rem;
-    line-height: 1.6rem
-  }
+/* Header */
 
-  h1,
-  h2,
-  h3 {
-    max-width: 25rem
-  }
+header {
+	background-color: white;
+	color: #E4979B;
+	padding: 5px 0;
+	text-align: center;
+}
 
-  figure {
-    max-width: 100%;
-    margin: auto;
-    padding: 0.125rem;
-    font-family: monospace;
-  }
+p {
+	max-width: clamp(45ch, 100%, 75ch);
+	font-size: 1rem;
+	line-height: 1.6rem; 
+}
 
-  img {
-    max-width: 100%;
-  }
+.bio {
+	background-color: #E4979B;
+	color:white;
+}
 
-  header {
-    max-width: 40rem;
-    margin: auto;
-  }
+h1,
+h2,
+h3 {
+	max-width: 25rem
+}
 
-  nav ul {
-    list-style: none;
-    overflow: auto;
-    margin: 0;
-  }
+figure {
+	max-width: 100%;
+	margin: auto;
+	margin-bottom: 2rem;
+	font-family: monospace;
+}
 
-  nav li {
-    display: inline;
-    margin-right: 2rem;
-  }
+figcaption {
+	margin-bottom: 1.5rem;
+	padding: 0.5rem;
+	color: black;
+	background-color: white;
+	font-size: 1rem;
+}
 
-  table td {
-    vertical-align: top;
-    padding: 0.156rem 0.313rem;
-    text-align: left
-  }
+img {
+	margin: auto;
+	max-width: 100%;
+}
 
-  .box {
-    padding: 0.8rem 0.8rem 0.6rem 0.6rem;
-    max-width: max-content;
-    border: 1px solid black;
-  }
+.shadow {
+	border: solid 2px black;
+	box-shadow: 5px 5px  black;
+}
 
-  .box-img {
-    padding: -0.8rem -0.8rem -0.6rem -0.6rem;
-  }
+nav ul {
+	background-color: #E4979B;
+	border-radius: 5px;
+	color: white;
+	padding: 1em;
+	text-decoration: none;
+}
 
-  .box-img img {
-    margin: 0;
-    padding: 0;
-  }
+nav a {
+	border-radius: 5px;
+	color: white;
+	padding: 1em;
+	text-decoration: none;
+}
 
-  @media (min-width:1100px) {
-    .wrapper {
-      width: 40rem;
-      margin: auto;
-    }
 
-    .grid-10 {
-      display: grid;
-      grid-template-columns: repeat(9, 1fr);
-      grid-auto-rows: -webkit-min-content;
-      grid-auto-rows: min-content;
-      -moz-column-gap: 1.6rem;
-      column-gap: 1.6rem;
-      row-gap: 1.6rem;
-    }
+nav a:hover {
+	background-color: #e8b8b8;
+}
 
-    .col-5 {
-      grid-column-end: span 6;
-    }
+nav li {
+	display: inline;
+	margin-right: 2rem;
+}
 
-    .col-4 {
-      grid-column-end: span 3;
-    }
-  }
+table td {
+	vertical-align: top;
+	padding: 0.156rem 0.313rem;
+	text-align: left;
+}
 
-  footer {
-    max-width: 40rem;
-    margin: auto;
-  }
+.box {
+	color:white;
+	padding: 0.8rem 0.8rem 0.6rem 0.6rem;
+	border: 1px solid #E4979B;
+	background-color: #f6cacc;
+}
+
+.box-img {
+	padding: -0.8rem -0.8rem -0.6rem -0.6rem;
+}
+
+.box-img img {
+	margin: 0;
+	padding: 0;
+}
+
+@media (min-width:1100px) {
+	.wrapper {
+		width: 40rem;
+		margin: auto;
+	}
+
+	.grid-10 {
+		display: grid;
+		grid-template-columns: repeat(9, 1fr);
+		grid-auto-rows: -webkit-min-content;
+		grid-auto-rows: min-content;
+		-moz-column-gap: 1.6rem;
+		column-gap: 1.6rem;
+		row-gap: 1.6rem;
+	}
+
+	.col-5 {
+		grid-column-end: span 6;
+	}
+
+	.col-4 {
+		grid-column-end: span 3;
+	}
+}
+
+footer {
+	max-width: 40rem;
+	margin: auto;
+}
