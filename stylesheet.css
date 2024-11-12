@@ -39,8 +39,10 @@ html {
 body {
 	font-family: Edu AU VIC WA NT Pre ;
 	margin: auto;
-    text-rendering: optimizeLegibility;
-	max-width: 40rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  text-rendering: optimizeLegibility;
+	max-width: 41rem;
 	color: black; 
 }
 
@@ -80,6 +82,14 @@ h1 {
 
 h1, h2, h3, h4{
 	color: #E4979B;
+}
+
+a:link {
+  color: #861b5b;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
 figure {
@@ -229,14 +239,6 @@ footer {
 	.col-4 {
 		grid-column-end: span 3;
 	}
-
-  a:link {
-    color: #861b5b;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-  }
 }
 
 @keyframes fade {
