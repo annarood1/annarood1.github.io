@@ -44,6 +44,13 @@ body {
 	color: black; 
 }
 
+article {
+    transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -webkit-transition: ease-in-out 0.2s;
+}
+
 /* Header */
 
 header {
@@ -96,14 +103,15 @@ img {
 	max-width: 100%;
 }
 
+img:hover {
+  filter:saturate(60%)brightness(115%);
+}
+
 .shadow {
 	border: solid 2px black;
 	box-shadow: 5px 5px  black;
 }
-.shadow-pink {
-    border: solid 2px 
-    box-shadow: 5px 5px 
-}
+
 nav ul {
 	background-color: #E4979B;
 	border-radius: 5px;
@@ -231,3 +239,11 @@ footer {
   }
 }
 
+@keyframes fade {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
