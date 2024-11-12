@@ -39,6 +39,7 @@ html {
 body {
 	font-family: Edu AU VIC WA NT Pre ;
 	margin: auto;
+    text-rendering: optimizeLegibility;
 	max-width: 40rem;
 	color: black; 
 }
@@ -53,9 +54,12 @@ header {
 }
 
 p {
-	max-width: clamp(45ch, 100%, 75ch);
-	font-size: 1rem;
-	line-height: 1.6rem; 
+    max-width: clamp(45ch, 100%, 75ch);
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    word-spacing: 0.05rem;
+    line-height: 1.4rem;
 }
 
 .bio {
@@ -63,8 +67,11 @@ p {
 	color:white;
 }
 
+h1 {
+    text-align: center;
+}
+
 h1, h2, h3, h4{
-	max-width: 25rem;
 	color: #E4979B;
 }
 
@@ -76,6 +83,7 @@ figure {
 }
 
 figcaption {
+    text-align: center;
 	margin-bottom: 1.5rem;
 	padding: 0.5rem;
 	color: black;
@@ -92,7 +100,10 @@ img {
 	border: solid 2px black;
 	box-shadow: 5px 5px  black;
 }
-
+.shadow-pink {
+    border: solid 2px 
+    box-shadow: 5px 5px 
+}
 nav ul {
 	background-color: #E4979B;
 	border-radius: 5px;
@@ -129,14 +140,27 @@ textarea {
 	padding: 0.8rem 1.2rem;
 	box-sizing: border-box;
 	background-color: white;
+    font-family: monospace;
 	resize: none;
 }
 
+label {
+    color: black;
+    margin-right: 1rem;
+}
+
+footer {
+    margin-top: 4rem;
+	  max-width: 40rem;
+    margin-bottom: 2rem;
+}
+
 .box {
-	color:white;
-	padding: 0.8rem 0.8rem 0.6rem 0.6rem;
+	color:black;
+	padding: 0.8rem 0.8rem 0rem 0.6rem;
 	border: 1px solid #E4979B;
 	background-color: #f6cacc;
+    margin-bottom: 1rem;
 }
 
 .box-img {
@@ -147,18 +171,30 @@ textarea {
 	margin: 0;
 	padding: 0;
 }
-
+.small-text p, li, dd {
+    font-size: 0.9rem;
+}
 .container {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: baseline;
+    gap: 6%;
+    align-items: flex-start;
+    justify-content:space-around;
 }
 
 .container > figure {
-	flex: 50%;
-	align-self: start;
-	box-sizing: border-box;
-	margin-bottom: 1rem;
+	flex: 44%;
+    margin: 0px auto;
+    margin-bottom: 2rem;
+}
+
+.container > div {
+    flex: 1 1;
+    margin-bottom: 2rem;
+}
+
+#white  {
+    color: white;
 }
 
 @media (min-width:1100px) {
@@ -186,7 +222,3 @@ textarea {
 	}
 }
 
-footer {
-	max-width: 40rem;
-	margin: auto;
-}
