@@ -46,12 +46,6 @@ body {
 	color: black; 
 }
 
-article {
-    transition: ease-in-out 0.2s;
-    -o-transition: ease-in-out 0.2s;
-    -moz-transition: ease-in-out 0.2s;
-    -webkit-transition: ease-in-out 0.2s;
-}
 
 /* Header */
 
@@ -63,26 +57,28 @@ header {
 }
 
 p {
-    max-width: clamp(45ch, 100%, 75ch);
-    text-align: justify;
-    hyphens: auto;
-    -webkit-hyphens: auto;
-    word-spacing: 0.05rem;
-    line-height: 1.4rem;
+  max-width: clamp(45ch, 100%, 75ch);
+  text-align: justify;
+   hyphens: auto;
+   -webkit-hyphens: auto;
+   word-spacing: 0.05rem;
+   line-height: 1.4rem;
 }
 
-.bio {
-	background-color: #E4979B;
+.bio {                          /*This is no longer in use as I went back to the box style for the list on my index page.*/
+	background-color: #E4979B;  /*I'm leaving this here so I can tinker with it more in the future.*/
 	color:white;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 h1, h2, h3, h4{
 	color: #E4979B;
 }
+
+/* Hyperlink */
 
 a:link {
   color: #861b5b;
@@ -100,7 +96,7 @@ figure {
 }
 
 figcaption {
-    text-align: center;
+  text-align: center;
 	margin-bottom: 1.5rem;
 	padding: 0.5rem;
 	color: black;
@@ -112,6 +108,8 @@ img {
 	margin: auto;
 	max-width: 100%;
 }
+
+/*Image Animation*/
 
 img:hover {
   filter:saturate(60%)brightness(115%);
@@ -158,7 +156,7 @@ textarea {
 	padding: 0.8rem 1.2rem;
 	box-sizing: border-box;
 	background-color: white;
-    font-family: monospace;
+  font-family: monospace;
 	resize: none;
 }
 
@@ -171,6 +169,23 @@ footer {
     margin-top: 4rem;
 	  max-width: 40rem;
     margin-bottom: 2rem;
+    border-radius: 5px;
+    color: white; 
+    background-color: #E4979B;
+}
+
+footer a:link {
+  color: white;
+}
+
+footer hr {
+  color: white;
+  width: 99.5%; /*For whatever reason it clips over the edge of the box if it's at 100%...*/
+}               /*I assume the more time I spend with CSS the more little issues like this will appear, LOL!*/
+
+footer small, span {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 
 .box {
@@ -178,7 +193,7 @@ footer {
 	padding: 0.8rem 0.8rem 0.3rem 0.3rem;
 	border: 1px solid #E4979B;
 	background-color: #f6cacc;
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .box-img {
@@ -190,30 +205,34 @@ footer {
 	padding: 0;
 }
 .small-text p, li, dd, th, td {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 
 .container {
 	display: flex;
 	flex-wrap: wrap;
-    gap: 6%;
-    align-items: flex-start;
-    justify-content:space-around;
+  gap: 6%;
+  align-items: flex-start;
+  justify-content:space-around;
 }
 
 .container > figure {
 	flex: 44%;
-    margin: 0px auto;
-    margin-bottom: 2rem;
+  margin: 0px auto;
+  margin-bottom: 2rem;
 }
 
 .container > div {
-    flex: 1 1;
-    margin-bottom: 2rem;
+  flex: 1 1;
+  margin-bottom: 2rem;
 }
 
 #white  {
-    color: white;
+  color: white;
+}
+
+#right {
+  float:right;
 }
 
 @media (min-width:1100px) {
@@ -227,9 +246,9 @@ footer {
 		grid-template-columns: repeat(9, 1fr);
 		grid-auto-rows: -webkit-min-content;
 		grid-auto-rows: min-content;
-		-moz-column-gap: 1.6rem;
-		column-gap: 1.6rem;
-		row-gap: 1.6rem;
+		-moz-column-gap: 1.6rem;               /*It's weird how different browsers require different CSS notation,*/
+		column-gap: 1.6rem;                    /*I feel like it wouldn't be that hard to collectively use the same*/
+		row-gap: 1.6rem;                       /*features.*/
 	}
 
 	.col-5 {
