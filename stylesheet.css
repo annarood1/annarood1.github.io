@@ -157,7 +157,7 @@ footer {
 
 .box {
 	color:black;
-	padding: 0.8rem 0.8rem 0rem 0.6rem;
+	padding: 0.8rem 0.8rem 0.3rem 0.3rem;
 	border: 1px solid #E4979B;
 	background-color: #f6cacc;
     margin-bottom: 1rem;
@@ -171,9 +171,10 @@ footer {
 	margin: 0;
 	padding: 0;
 }
-.small-text p, li, dd {
+.small-text p, li, dd, th, td {
     font-size: 0.9rem;
 }
+
 .container {
 	display: flex;
 	flex-wrap: wrap;
@@ -220,5 +221,13 @@ footer {
 	.col-4 {
 		grid-column-end: span 3;
 	}
+
+  a:link {
+    color: #861b5b;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
 }
 
