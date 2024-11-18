@@ -42,3 +42,44 @@ console.log(currentDate);
 document.addEventListener('DOMContentLoaded', () => {
         greeting();
 })
+const alertBtn = document.getElementById("btn-alert");
+const theCreature = document.getElementById("the-creature");
+
+// Set initial state, the creature is hidden.
+let isCreatureReleased = false;
+
+// Define state-dependent messages
+const messages = {
+    default: {
+        hover: 'Are you sure you want to release the creature?',
+        normal: 'Release the creature?',
+    },
+    released: {
+        hover: 'QUICK! GET RID OF THE CREATURE!',
+        normal: 'Force the creature back in its cage?',
+    },
+    alert: {
+        release: "THE CREATURE HAS BEEN RELEASED!\nRUN!!!",
+        cage: "THE CREATURE HAS BEEN CAGED!\nYOU'RE SAFE!",
+    },
+};
+
+// Update button text based on state
+function updateButtonText(isHover) {
+    const stateMessages = isCreatureReleased ? messages.released : messages.default;
+    alertBtn.textContent = isHover ? stateMessages.hover : stateMessages.normal;
+}
+
+// Set initial button text
+updateButtonText(false);
+
+// Add event listeners
+alertBtn.addEventListener('mouseover', () => updateButtonText(true));
+alertBtn.addEventListener('mouseout', () => updateButtonText(false));
+
+alertBtn.addEventListener('click', () => {
+    alert(isCreatureReleased ? messages.alert.cage : messages.alert.release);
+    theCreature.classList.toggle("hidden");
+    isCreatureReleased = !isCreatureReleased; // Toggle state
+    updateButtonText(false); // Update text after state change
+});
