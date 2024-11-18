@@ -1,5 +1,4 @@
-// This file contains all javascript called by the site.
-// I've isolated the production code to several individual documents for troubleshooting and performance sake.
+// Javascript called by the index.html file
 
 const currentDate = new Date();
 
@@ -91,19 +90,3 @@ alertBtn.addEventListener('click', () => {
 	updateButtonText(false); // Update text after state change
 	console.log("Button interacted with.");
 });
-
-// For loop
-const forLoopList = document.getElementById("numbers");
-if (forLoopList) {
-    for (let i = 1; i <= 12; i = i + 1) {
-        let listItem = document.createElement("li");
-        if (i % 2 == 1) {
-            listItem.textContent = "Odd";
-            console.log(i + " is odd.");
-        } else {
-            listItem.textContent = "Even";
-            console.log(i + " is even.");
-        };
-        numbers.appendChild(listItem)
-    }
-} 
