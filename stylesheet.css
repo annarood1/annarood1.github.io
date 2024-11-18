@@ -277,14 +277,9 @@ footer small, span {
   margin-bottom: 1rem;
 }
 
-.active {
+.creature-active {
   background-color: black;
   color: white;
-}
-
-.creature-button .inactive {
-  background-color: white;
-  color: black;
 }
 
 @media (min-width:1100px) {

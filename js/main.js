@@ -75,6 +75,8 @@ const messages = {
 function updateButtonText(isHover) {
 	const stateMessages = isCreatureReleased ? messages.released : messages.default;
 	alertBtn.textContent = isHover ? stateMessages.hover : stateMessages.normal;
+    alertBtn.classList.toggle("creature-active");
+    console.log("Button hovered.")
 }
 
 // Set initial button text
