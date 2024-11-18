@@ -11,7 +11,7 @@ function greeting() {
     let style = '';  
 
     if (hour <= 4) {
-        message = 'GET YOUR ASS TO BED!';
+        message = 'GET YOUR BUTT TO BED!';
         style = 'night';
     } else if (hour <= 11) {
         message = 'Good morning!';
