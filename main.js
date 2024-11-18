@@ -11,7 +11,7 @@ function greeting() {
     let style = '';  
 
     if (hour <= 4) {
-        message = 'GET YOUR BUTT TO BED!';
+        message = 'GET YOUR BUTT TO BED! &#127772;';
         style = 'night';
     } else if (hour <= 11) {
         message = 'Good morning!';
@@ -26,7 +26,7 @@ function greeting() {
 
     // Adjusts values of HTML and outputs confirmation to console.
     console.log(message);
-    greetingText.textContent = message;
+    greetingText.innerHTML = message;
     greetingBox.classList.add(style);
 }
 // Wait until after the document has loaded to run greeting

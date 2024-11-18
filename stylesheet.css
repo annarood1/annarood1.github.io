@@ -47,13 +47,33 @@ body {
 }
 
 /* Day */
-morning {
+.morning h1 {
   background-color: white;
-  color: #E4979B;
+  color: #ddcd72;
   padding: 5px 0;
   text-align: center;
 }
 
+.afternoon h1 {
+  background-color: white;
+  color: rgb(236, 139, 69);
+  padding: 5px 0;
+  text-align: center;
+}
+
+.evening h1 {
+  background-color: white;
+  color:#9a426a;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.night h1 {
+  background-color: white;
+  color:rgb(127, 44, 171);
+  padding: 5px 0;
+  text-align: center;
+}
 
 /* Header */
 
