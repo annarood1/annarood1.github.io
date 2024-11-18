@@ -146,6 +146,8 @@ img:hover {
 .shadow {
 	border: solid 2px black;
 	box-shadow: 5px 5px  black;
+  width: inherit;
+  height: inherit;
 }
 
 nav ul {
