@@ -1,3 +1,4 @@
+console.log('test to see if the file is linked correctly in the html document')
 // Variables to be used throughout all time related script.
 const currentDate = new Date();
 
