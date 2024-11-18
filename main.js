@@ -17,10 +17,10 @@ function greeting() {
         message = 'Good morning! &#127774;';
         style = 'morning';
     } else if (hour <= 17) {
-        message = 'Good afternoon! $#127763;';
+        message = 'Good afternoon! &#127763;';
         style = 'afternoon';
     } else {
-        message = 'Good evening! $#127768;';
+        message = 'Good evening! &#127768;';
         style = 'evening';
     }
 
