@@ -1,17 +1,18 @@
-console.log('test to see if the file is linked correctly in the html document')
-// Variables to be used throughout all time related script.
 const currentDate = new Date();
 
-// GREETING CARD      
+// GREETING CARD
 const greetingBox = document.getElementById("greetingbox");
 const greetingText = document.getElementById("greetingtext");
 
 // If else statements used to change values.
 function greeting() {
-    let hour = currentDate.getHours()
-    if (hour <= 4 ) {
+    const hour = currentDate.getHours();
+    let message = '';
+    let style = '';  
+
+    if (hour <= 4) {
         message = 'GET YOUR ASS TO BED!';
-        style = 'night';    
+        style = 'night';
     } else if (hour <= 11) {
         message = 'Good morning!';
         style = 'morning';
@@ -22,8 +23,13 @@ function greeting() {
         message = 'Good evening!';
         style = 'evening';
     }
-    // Adjusts values of html and outputs to console.
+
+    // Adjusts values of HTML and outputs confirmation to console.
     console.log(message);
     greetingText.textContent = message;
     greetingBox.classList.add(style);
 }
+// Wait until after the document has loaded to run greeting
+document.addEventListener('DOMContentLoaded', () => {
+        greeting();
+})

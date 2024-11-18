@@ -30,8 +30,8 @@
         <hr />
         <main>
 			<div id="greetingbox" class="greeting ">
-				<h1 id="greetingtext"></h1>
-			</div>
+                <h2 id="greetingtext"></h2>
+            </div>
             <h1>Welcome to my Website!</h1>
             <article>
                 <section>
@@ -93,34 +93,5 @@
             <small>&copy; Anna Rood, 2024 <span id="right">BY-NC-SA 4.0</span></small>
         </footer>
     </body>
-	<script>
-		// Variables to be used throughout all time related script.
-const currentDate = new Date();
-
-// GREETING CARD      
-const greetingBox = document.getElementById("greetingbox");
-const greetingText = document.getElementById("greetingtext");
-
-// If else statements used to change values.
-function greeting() {
-    let hour = currentDate.getHours()
-    if (hour <= 4 ) {
-        message = 'GET YOUR ASS TO BED!';
-        style = 'night';    
-    } else if (hour <= 11) {
-        message = 'Good morning!';
-        style = 'morning';
-    } else if (hour <= 17) {
-        message = 'Good afternoon!';
-        style = 'afternoon';
-    } else {
-        message = 'Good evening!';
-        style = 'evening';
-    }
-    // Adjusts values of html and outputs to console.
-    console.log(message);
-    greetingText.textContent = message;
-    greetingBox.classList.add(style);
-}
-	</script>
+	<script src="main.js"></script>
 </html>

@@ -46,6 +46,14 @@ body {
 	color: black; 
 }
 
+/* Day */
+morning {
+  background-color: white;
+  color: #E4979B;
+  padding: 5px 0;
+  text-align: center;
+}
+
 
 /* Header */
 
