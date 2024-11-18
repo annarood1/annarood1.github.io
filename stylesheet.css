@@ -267,6 +267,24 @@ footer small, span {
   display:none;
 }
 
+.creature-button {
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: .5rem;
+  max-width: 25ch;
+  margin-bottom: 1rem;
+}
+
+.active {
+  background-color: black;
+  color: white;
+}
+
+.creature-button .inactive {
+  background-color: white;
+  color: black;
+}
+
 @media (min-width:1100px) {
 	.wrapper {
 		width: 40rem;

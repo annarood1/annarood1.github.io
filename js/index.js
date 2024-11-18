@@ -68,12 +68,18 @@ const messages = {
 		release: "THE CREATURE HAS BEEN RELEASED!\nRUN!!!",
 		cage: "THE CREATURE HAS BEEN CAGED!\nYOU'RE SAFE!",
 	},
+    class: {
+        active: "active",
+        inactive: "inactive"
+    }
 };
 
 // Update button text based on state
 function updateButtonText(isHover) {
 	const stateMessages = isCreatureReleased ? messages.released : messages.default;
 	alertBtn.textContent = isHover ? stateMessages.hover : stateMessages.normal;
+    alertBtn.classList.toggle("active");
+    console.log("Button hovered.")
 }
 
 // Set initial button text
